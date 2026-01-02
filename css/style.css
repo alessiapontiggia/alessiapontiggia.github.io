@@ -1,247 +1,119 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
+
 body {
-    font-family: "Poppins", sans-serif;
-    height: 100vh;
-    background: #f1f7ff;
-  }
-  /*
-  #eef5f1;
-  rgba(171, 201, 199, 0.8);
-  */
-  .navbar {
-    background: rgba(95, 158, 160, 0.8);
-    backdrop-filter: blur(8px);
-    color: white;
-  }
-  .navbar-light .navbar-toggler {
-    padding: 0.25rem 0.75rem;
-    font-size: 1.25rem;
-    line-height: 1;
-    background-color: transparent;
-    border: 1px solid transparent;
-    border-radius: 0.5rem;
-    transition: color 0.50s ease-in-out, background-color 0.30s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  }
-  
-  .navbar-light .navbar-toggler:focus {
-    box-shadow: none;
-  }
-  .navbar-light .navbar-toggler:active {
-    color: #fff;
-    background-color: #dddddd;
-    border: 1px solid transparent;
-    transition: 1s;
-    box-shadow: 0 0.2em #dfd9d9;
-  }
-  .nav-link {
-    font-size: large;
-    color: white;
-  }
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  background: #f1f7ff;
+}
 
-  .nav-item {
-    cursor: pointer;
-    color: white;
-  }
-  .nav-item:hover {
-      color: whitesmoke;
-  }
+.navbar {
+  background: rgba(95, 158, 160, 0.8);
+  backdrop-filter: blur(8px);
+  color: white;
+}
 
-  .container-car-home {
-    border: solid rgba(43, 43, 43, 0.692) 1px;
-    background-image: url('../img/scrivania.jpg');
-    opacity: 0.9;
-    background-size: cover;
-    margin-top: 4em;
-    margin-bottom: 1rem;
-    width: 100%;
-    height: 70%;
+.navbar-logo {
+  width: 50px;
+  height: auto;
+  margin-right: 1em;
+}
 
-    box-shadow: rgba(149, 157, 165, 0.424) 0px 8px 24px;
-  }
+.navbar-light .navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  border-radius: 0.5rem;
+}
 
+.nav-link { font-size: large; color: white; }
+.nav-item:hover { color: whitesmoke; }
 
-  @media (max-width: 1200px) {
-    .container-car-home {
-      height: 500px;
-    }
-  }
+/* HERO */
+.hero-wrapper {
+  background: linear-gradient(180deg, #f1f7ff 0%, rgba(95, 158, 160, 0.15) 100%);
+  padding-top: 6em;
+  padding-bottom: 4em;
+}
 
-  @media (max-width: 900px) {
-    .container-car-home {
-      height: 700px;
-    }
-  }
+.hero-container {
+  display: flex;
+  justify-content: center;
+}
 
-  @media (max-width: 750px) {
-    .container-car-home {
-      height: 900px;
-    }
-  }
+.hero-content {
+  background-color: rgba(255, 255, 255, 0.88);
+  border-radius: 18px;
+  max-width: 1000px;
+  width: 85%;
+  padding: 2.5em 3em;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
 
-  @media (max-width: 550px) {
-    .container-car-home {
-      height: 1200px;
-    }
-  }
+.hero-title {
+  margin-bottom: 0.5em;
+}
 
-  @media (max-width: 350px) {
-    .container-car-home {
-      height: 1300px;
-    }
-  }
+/* CARD PROGETTI */
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0.3rem;
+}
 
+.title {
+  padding-left: 20px;
+  margin-top: 2em;
+}
 
-  .title{
-    padding-left:20px; 
-    margin-top: 3em;
-  }
+/* FOOTER */
+.myFoo { background-color: rgba(113, 134, 133, 0.8); text-align: center; padding: 2em 0; }
+.mail, .linkedin { color: white; text-decoration: none; }
+.mail:hover, .linkedin:hover { font-weight: bold; }
 
-  .cont-flex {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
-    margin: 0 auto;
-    margin-top: 1em;
-    opacity: 1;
-    background-color: #dfd9d9c4;
-    background-size: cover;
-    color: solid black;
-    width: 70%;
-    height: 90%;
-    
-  }
+/* SWIPER */
+.swiper { width: 100%; padding: 2em 0; }
+.swiper-slide { display: flex; justify-content: center; }
 
-  .box1{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    margin-top: 2em;
-    margin-bottom: 2em;
-  }
+.swiper {
+  width: 100%;
+  padding: 2em 0;
+}
 
-  .box2{
-    flex: 50%;
-    width: 100%;
-    height: 100%;
-    margin-top: 2em;
-  }
-  
-  @media (max-width: 800px) {
-    .box1 {
-      flex: 100%;
-      height: 100%;
-    }
-  }
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
 
-  .mylist {
-    list-style-type: square;
-  }
+.dish {
+  width: 300px;       /* larghezza fissa */
+  height: 300px;      /* altezza fissa */
+  object-fit: cover;  /* ritaglio intelligente */
+  border-radius: 10px;
+  box-shadow: rgba(0,0,0,0.2) 0px 4px 12px;
+  transition: transform 0.3s, opacity 0.3s;
+}
 
+.dish:hover {
+  transform: scale(1.05);
+  opacity: 0.85;
+}
 
-  .card-group {
-    padding: 1rem;
-    gap: 1em;
-  }
+.logo-nav {
+  width: 50px;       /* dimensione desiderata */
+  height: 50px;      /* stessa dell’altezza per renderlo perfettamente circolare */
+  object-fit: cover; /* ritaglio intelligente se l’immagine non è quadrata */
+  border-radius: 50%; /* rende circolare */
+  border: 2px solid white; /* opzionale: contorno bianco */
+}
 
-  .card {
-    padding: 1rem;
+/* Footer link styling */
+#collegamenti a {
+  color: black;         /* colore dei link */
+  text-decoration: none; /* rimuove sottolineatura */
+  transition: color 0.3s ease;
+}
 
-    box-shadow: rgba(149, 157, 165, 0.424) 0px 8px 24px;
-  }
-
-  .card-img-top:hover {
-    transform: scale(1.05);
-  }
-
-  
-  .grid-container {
-   display: grid;
-   padding: 2em;
-   grid-template-rows: auto auto auto;
-  }
-
-  
-  .cont-int {
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding: 1em;
-    gap: 4em;
-    justify-content: center;
-    background-color: #ffffff; 
-    
-  }
-
-  .elem {
-    position: relative;
-    box-shadow: rgba(149, 157, 165, 0.424) 0px 8px 24px;
-  }
-
-  .dish {
-    width: 310px;
-    min-width: 250px;
-    height: 310px;
-    min-height: 250px;
-  }
-
-  .centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-   }
-
-   .centered:hover{
-     cursor: default;
-   }
-
-  .dish:hover{
-    opacity: 0.7;
-    transform: scale(1.02);
-  }
-
-  .sport {
-   
-   display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    gap: 2em;
-    padding: 2em;
-    
-  }
-
-  .row {
-    padding: 1em;
-    text-align: center;
-    justify-content: center;
-    color: white;
-  }
-
-  .myFoo {
-    background-color: rgba(113, 134, 133, 0.8);
-    margin: 0 auto;
-    margin-top: 7em;
-    text-align: center;
-  }
-
-  .mail {
-    color: white;
-  }
-
-  .mail:hover {
-    color: white;
-    font-weight: bold;
-  }
-
-  .linkedin {
-    color: white;
-  }
-  .linkedin:hover{
-    color: white;
-    font-weight: bold;
-  }
+#collegamenti a:hover {
+  color: black; /* colore al passaggio del mouse, opzionale */
+  text-decoration: none;
+}
