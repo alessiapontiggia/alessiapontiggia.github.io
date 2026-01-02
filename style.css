@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  background: #f1f7ff;
+}
+
+.navbar {
+  background: rgba(95, 158, 160, 0.8);
+  backdrop-filter: blur(8px);
+  color: white;
+}
+
+.navbar-logo {
+  width: 50px;
+  height: auto;
+  margin-right: 1em;
+}
+
+.navbar-light .navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  border-radius: 0.5rem;
+}
+
+.nav-link { font-size: large; color: white; }
+.nav-item:hover { color: whitesmoke; }
+
+/* HERO */
+.hero-wrapper {
+  background: linear-gradient(180deg, #f1f7ff 0%, rgba(95, 158, 160, 0.15) 100%);
+  padding-top: 6em;
+  padding-bottom: 4em;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-content {
+  background-color: rgba(255, 255, 255, 0.88);
+  border-radius: 18px;
+  max-width: 1000px;
+  width: 85%;
+  padding: 2.5em 3em;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+.hero-title {
+  margin-bottom: 0.5em;
+}
+
+/* CARD PROGETTI */
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0.3rem;
+}
+
+.title {
+  padding-left: 20px;
+  margin-top: 2em;
+}
+
+/* FOOTER */
+.myFoo { background-color: rgba(113, 134, 133, 0.8); text-align: center; padding: 2em 0; }
+.mail, .linkedin { color: white; text-decoration: none; }
+.mail:hover, .linkedin:hover { font-weight: bold; }
+
+/* SWIPER */
+.swiper { width: 100%; padding: 2em 0; }
+.swiper-slide { display: flex; justify-content: center; }
+
+.swiper {
+  width: 100%;
+  padding: 2em 0;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.dish {
+  width: 300px;       /* larghezza fissa */
+  height: 300px;      /* altezza fissa */
+  object-fit: cover;  /* ritaglio intelligente */
+  border-radius: 10px;
+  box-shadow: rgba(0,0,0,0.2) 0px 4px 12px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.dish:hover {
+  transform: scale(1.05);
+  opacity: 0.85;
+}
+
+.logo-nav {
+  width: 50px;       /* dimensione desiderata */
+  height: 50px;      /* stessa dell’altezza per renderlo perfettamente circolare */
+  object-fit: cover; /* ritaglio intelligente se l’immagine non è quadrata */
+  border-radius: 50%; /* rende circolare */
+  border: 2px solid white; /* opzionale: contorno bianco */
+}
+
+/* Footer link styling */
+#collegamenti a {
+  color: black;         /* colore dei link */
+  text-decoration: none; /* rimuove sottolineatura */
+  transition: color 0.3s ease;
+}
+
+#collegamenti a:hover {
+  color: black; /* colore al passaggio del mouse, opzionale */
+  text-decoration: none;
+}
