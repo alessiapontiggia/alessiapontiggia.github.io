@@ -12,12 +12,13 @@ body {
   color: white;
 }
 
-.navbar-logo {
-  width: 50px;
-  height: auto;
-  margin-right: 1em;
+.logo-nav {
+  width: 50px;       /* dimensione desiderata */
+  height: 50px;      /* stessa dell’altezza per renderlo perfettamente circolare */
+  object-fit: cover; /* ritaglio intelligente se l’immagine non è quadrata */
+  border-radius: 50%; /* rende circolare */
+  border: 2px solid white; /* opzionale: contorno bianco */
 }
-
 .navbar-light .navbar-toggler {
   padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
@@ -98,13 +99,6 @@ body {
   opacity: 0.85;
 }
 
-.logo-nav {
-  width: 50px;       /* dimensione desiderata */
-  height: 50px;      /* stessa dell’altezza per renderlo perfettamente circolare */
-  object-fit: cover; /* ritaglio intelligente se l’immagine non è quadrata */
-  border-radius: 50%; /* rende circolare */
-  border: 2px solid white; /* opzionale: contorno bianco */
-}
 
 /* Footer link styling */
 #collegamenti a {
